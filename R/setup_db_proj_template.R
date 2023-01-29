@@ -26,6 +26,10 @@ setup_db_proj_metadata <- function(obj, type) {
   # * `type`
   if (!isTRUE(is.character(type)) || !isTRUE(length(type) == 1)) {
     stop("`type` must be a scalar character in call to `setup_db_proj_metadata`")
+  } 
+  
+  if (!isTRUE(type %in% dbProj::db_proj_template_types)) {
+    stop("`type` must be a valid value in 'dbProj::db_proj_template_types' in call to `setup_db_proj_metadata`")
   }
   
 }
@@ -57,6 +61,10 @@ setup_db_proj_data <- function(obj, type) {
   # * `type`
   if (!isTRUE(is.character(type)) || !isTRUE(length(type) == 1)) {
     stop("`type` must be a scalar character in call to `setup_db_proj_data`")
+  }
+  
+  if (!isTRUE(type %in% dbProj::db_proj_template_types)) {
+    stop("`type` must be a valid value in 'dbProj::db_proj_template_types' in call to `setup_db_proj_data`")
   }
   
 }
