@@ -17,4 +17,5 @@ Depends:
 LazyData: true
 Imports: 
     dm,
+    glue,
     magrittr

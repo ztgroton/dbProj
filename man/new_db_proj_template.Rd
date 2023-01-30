@@ -4,10 +4,7 @@
 \alias{new_db_proj_template}
 \title{Constructor for S3 Class 'db_proj_template'}
 \usage{
-new_db_proj_template(type)
-}
-\arguments{
-\item{type}{character - Specify database type for template}
+new_db_proj_template()
 }
 \value{
 S3Class
@@ -17,6 +14,6 @@ Constructor for S3 Class 'db_proj_template'
 }
 \examples{
 \dontrun{
-new_db_proj_template('mssql')
+new_db_proj_template()
 }
 }

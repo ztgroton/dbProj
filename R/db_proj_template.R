@@ -1,19 +1,14 @@
 
 #' Constructor for S3 Class 'db_proj_template'
 #' 
-#' @param type character - Specify database type for template
-#' 
 #' @return S3Class 
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' new_db_proj_template('mssql')
+#' new_db_proj_template()
 #' }
-new_db_proj_template <- function(type) {
-  
-  # Validate Inputs
-  if (missing(type)) {stop("`type` is missing in call to `new_db_proj_template`")}
+new_db_proj_template <- function() {
   
   # Initialize Empty S3 Object
   rs <- list(
