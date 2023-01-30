@@ -9,9 +9,6 @@ setup_db_proj_template(obj)
 \arguments{
 \item{obj}{S3 Object}
 }
-\value{
-R Object
-}
 \description{
 Setup Internal Data for S3 Object of class 'db_proj_template'
 }
