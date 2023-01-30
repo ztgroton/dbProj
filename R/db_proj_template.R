@@ -70,17 +70,17 @@ validate_db_proj_template <- function(obj, bool) {
   if (!isTRUE(bool)) {
       
       if (!isTRUE(length(err) == 0)) {
-          return(obj)
-      } else {
           return(err)
+      } else {
+          return(obj)
       }
       
   } else {
       
       if (!isTRUE(length(err) == 0)) {
-          return(TRUE)
-      } else {
           return(FALSE)
+      } else {
+          return(TRUE)
       }
       
   }
