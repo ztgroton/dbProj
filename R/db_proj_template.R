@@ -95,28 +95,20 @@ validate_db_proj_template <- function(obj, bool) {
 
 #' S3 Class Helper Function for 'db_proj_template'
 #'
-#' @param type character - Specify database type for template
-#'
 #' @return S3 Object
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' db_proj_template('mssql')
+#' db_proj_template()
 #' }
-db_proj_template <- function(type) {
+db_proj_template <- function() {
   
-  # Validate Inputs
-  if (missing(type)) {stop("`type` is missing in call to `db_proj_template`")}
-  
-  # Initialize Blank
+  # Initialize Blank Template
   temp <- new_db_proj_template()
   
-  # Setup Template Metadata
-  setup_db_proj_metadata(temp, type)
-  
-  # Setup Template Data
-  setup_db_proj_data(temp, type)
+  # Setup Template Internal Data
+  setup_db_proj_template(temp)
   
   # Validate Template
   validate_db_proj_template(temp)

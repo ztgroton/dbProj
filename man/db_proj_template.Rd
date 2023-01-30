@@ -4,10 +4,7 @@
 \alias{db_proj_template}
 \title{S3 Class Helper Function for 'db_proj_template'}
 \usage{
-db_proj_template(type)
-}
-\arguments{
-\item{type}{character - Specify database type for template}
+db_proj_template()
 }
 \value{
 S3 Object
@@ -17,6 +14,6 @@ S3 Class Helper Function for 'db_proj_template'
 }
 \examples{
 \dontrun{
-db_proj_template('mssql')
+db_proj_template()
 }
 }
